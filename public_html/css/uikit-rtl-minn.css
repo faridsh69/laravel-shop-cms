@@ -1,0 +1,3087 @@
+/*! UIkit 3.0.0-rc.10 | http://www.getuikit.com | (c) 2014 - 2018 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Base
+ ========================================================================== */
+/*
+ * 1. Set `font-size` to support `rem` units
+ *    Not using `font` property because a leading hyphen (e.g. -apple-system) causes the font to break in IE11 and Edge
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Style
+ */
+html {
+  /* 1 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.5;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 3 */
+  background: #fff;
+  color: #666;
+}
+/*
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+}
+/* Links
+ ========================================================================== */
+/*
+ * Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  -webkit-text-decoration-skip: objects;
+}
+/*
+ * Remove the outline on focused links when they are also active or hovered
+ */
+a:active,
+a:hover {
+  outline: none;
+}
+/*
+ * Style
+ */
+a {
+  color: #1e87f0;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  color: #0f6ecd;
+  text-decoration: underline;
+}
+/* Text-level semantics
+ ========================================================================== */
+/*
+ * 1. Remove the bottom border in Chrome 57-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+/*
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+/*
+ * 1. Consolas has a better baseline in running text compared to `Courier`
+ * 2. Correct the odd `em` font sizing in all browsers.
+ * 3. Style
+ */
+/*
+ * Emphasize
+ */
+/*
+ * Insert
+ */
+/*
+ * Mark
+ */
+/*
+ * Quote
+ */
+/*
+ * Add the correct font size in all browsers.
+ */
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* Embedded content
+ ========================================================================== */
+/*
+ * Remove the gap between embedded content and the bottom of their containers.
+ */
+/*
+ * Responsiveness
+ * 1. Set a maximum width
+ * 2. Auto scale the height. Only needed if `height` attribute is present
+ * 2. Corrects `max-width` behavior if padding and border are used
+ */
+/*
+ * Hide the overflow in IE.
+ */
+/*
+ * Hide `alt` text for lazy load images
+ * Selector for background while loading img[data-src*='.jpg'][src*='data:image'] { background: grey; }
+ */
+/* Block elements
+ ========================================================================== */
+/*
+ * Margins
+ */
+ul {
+  margin: 0 0 20px 0;
+}
+/* Add margin if adjacent element */
+/* Headings
+ ========================================================================== */
+/* Add margin if adjacent element */
+/*
+ * Sizes
+ */
+/* Tablet landscape and bigger */
+/* Lists
+ ========================================================================== */
+ul {
+  padding-right: 30px;
+}
+/*
+ * Reset margin for nested lists
+ */
+/* Description lists
+ ========================================================================== */
+/* Horizontal rules
+ ========================================================================== */
+/*
+ * 1. Add the correct box sizing and height in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ * 3. Add the correct text-align in Edge and IE.
+ * 4. Style
+ */
+/* Add margin if adjacent element */
+/* Address
+ ========================================================================== */
+/* Blockquotes
+ ========================================================================== */
+/* Add margin if adjacent element */
+/*
+ * Content
+ */
+/* Preformatted text
+ ========================================================================== */
+/*
+ * 1. Contain overflow in all browsers.
+ */
+/* Selection pseudo-element
+ ========================================================================== */
+::-moz-selection {
+  background: #39f;
+  color: #fff;
+  text-shadow: none;
+}
+::selection {
+  background: #39f;
+  color: #fff;
+  text-shadow: none;
+}
+/* HTML5 elements
+ ========================================================================== */
+/*
+ * 1. Add the correct display in Edge, IE 10+, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+/*
+ * Add the correct display in all browsers.
+ */
+/*
+ * Add the correct display in IE.
+ */
+/* Iframe
+ ========================================================================== */
+/* Prevent the 300ms delay for touchscreen interactions
+ ========================================================================== */
+/*
+ * Most browsers prevent the 300ms delay automatically for sites that use the `width=device-width` property.
+ * For Safari on iOS 9.3+, IE 11 and Edge on desktops and IE 11 on Windows Phone 8.1 it must be applied manually.
+ */
+a {
+  touch-action: manipulation;
+}
+/* Pass media breakpoints to JS
+ ========================================================================== */
+/*
+ * Breakpoints
+ */
+/* ========================================================================
+   Component: Link
+ ========================================================================== */
+/* Muted
+ ========================================================================== */
+/* Text
+ ========================================================================== */
+a.uk-link-text:not(:hover),
+.uk-link-text a:not(:hover) {
+  color: inherit;
+}
+/* Heading
+ ========================================================================== */
+a.uk-link-heading:not(:hover),
+.uk-link-heading a:not(:hover) {
+  color: inherit;
+}
+/* Reset
+ ========================================================================== */
+/*
+ * `!important` needed to override inverse component
+ */
+/* ========================================================================
+   Component: Heading
+ ========================================================================== */
+/* Primary
+ ========================================================================== */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Hero
+ ========================================================================== */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Divider
+ ========================================================================== */
+/* Bullet
+ ========================================================================== */
+/*
+ * 1. Using `inline-block` to make it work with text alignment
+ * 2. Center vertically
+ * 3. Style
+ */
+/* Line
+ ========================================================================== */
+/*
+ * Clip the child element
+ */
+/*
+ * Extra markup is needed to make it work with text align
+ */
+/*
+ * 1. Center vertically
+ * 2. Make the element as large as possible. It's clipped by the container.
+ * 3. Style
+ */
+.uk-heading-line > ::before,
+.uk-heading-line > ::after {
+  content: "";
+  /* 1 */
+  position: absolute;
+  top: calc(50% - (1px / 2));
+  /* 2 */
+  width: 2000px;
+  /* 3 */
+  border-bottom: 1px solid #e5e5e5;
+}
+.uk-heading-line > ::before {
+  left: 100%;
+  margin-left: 0.6em;
+}
+.uk-heading-line > ::after {
+  right: 100%;
+  margin-right: 0.6em;
+}
+/* ========================================================================
+   Component: Divider
+ ========================================================================== */
+/*
+ * 1. Reset default `hr`
+ * 2. Set margin if a `div` is used for semantical reason
+ */
+/* Add margin if adjacent element */
+/* Icon
+ ========================================================================== */
+/* Small
+ ========================================================================== */
+/*
+ * Reset child height, caused by `inline-block`
+ */
+/* ========================================================================
+   Component: List
+ ========================================================================== */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/*
+ * Nested lists
+ */
+/*
+ * Style
+ */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Divider
+ */
+/*
+ * Striped
+ */
+/*
+ * Bullet
+ */
+/* Size modifier
+ ========================================================================== */
+/*
+ * Divider
+ */
+/*
+ * Striped
+ */
+/* ========================================================================
+   Component: Description list
+ ========================================================================== */
+/*
+ * Term
+ */
+/*
+ * Description
+ */
+/* Style modifier
+ ========================================================================== */
+/*
+ * Line
+ */
+/* ========================================================================
+   Component: Table
+ ========================================================================== */
+/*
+ * 1. Remove most spacing between table cells.
+ * 2. Behave like a block element
+ * 3. Style
+ */
+/* Add margin if adjacent element */
+/* Header cell
+ ========================================================================== */
+/*
+ * 1. Style
+ */
+/* Cell
+ ========================================================================== */
+/*
+ * Remove margin from the last-child
+ */
+/* Footer
+ ========================================================================== */
+/* Caption
+ ========================================================================== */
+/* Alignment modifier
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Divider
+ */
+/*
+ * Striped
+ */
+/*
+ * Hover
+ */
+/* Active state
+ ========================================================================== */
+/* Size modifier
+ ========================================================================== */
+/* Justify modifier
+ ========================================================================== */
+/* Cell size modifier
+ ========================================================================== */
+/* Cell link modifier
+ ========================================================================== */
+/*
+ * Does not work with `uk-table-justify` at the moment
+ */
+/* Responsive table
+ ========================================================================== */
+/* Phone landscape and smaller */
+/* ========================================================================
+   Component: Icon
+ ========================================================================== */
+/*
+ * Note: 1. - 7. is required for `button` elements. Needed for Close and Form Icon component.
+ * 1. Remove margins in Chrome, Safari and Opera.
+ * 2. Remove borders for `button`.
+ * 3. Remove border-radius in Chrome.
+ * 4. Address `overflow` set to `hidden` in IE.
+ * 5. Correct `font` properties and `color` not being inherited for `button`.
+ * 6. Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 7. Remove default `button` padding and background color
+ * 8. Style
+ * 9. Fill all SVG elements with the current text color if no `fill` attribute is set
+ * 10. Let the container fit the height of the icon
+ */
+/* Required for `button`. */
+button.uk-icon:not(:disabled) {
+  cursor: pointer;
+}
+/*
+ * Remove the inner border and padding in Firefox.
+ */
+/*
+ * Set the fill and stroke color of all SVG elements to the current text color
+ * 1. Fix for uppercase attribute names in Edge. Will be fixed in Windows 10 builds 16251+
+ */
+/*
+ * Fix Firefox blurry SVG rendering: https://bugzilla.mozilla.org/show_bug.cgi?id=1046835
+ */
+/* Image modifier
+ ========================================================================== */
+/*
+ * Display images in icon dimensions
+ */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Link
+ */
+/* OnClick + Active */
+/*
+ * Button
+ * 1. Center icon vertically and horizontally
+ */
+/* Hover + Focus */
+/* OnClick + Active */
+/* ========================================================================
+   Component: Form Range
+ ========================================================================== */
+/*
+ * 1. Normalize and defaults
+ * 2. Prevent content overflow if a fixed width is used
+ * 3. Take the full width
+ * 4. Remove default style
+ * 5. Remove white background in Chrome
+ * 6. Remove padding in IE11
+ */
+/* Focus */
+/* IE11 Reset */
+/*
+ * Improves consistency of cursor style for clickable elements
+ */
+.uk-range:not(:disabled)::-webkit-slider-thumb {
+  cursor: pointer;
+}
+.uk-range:not(:disabled)::-moz-range-thumb {
+  cursor: pointer;
+}
+.uk-range:not(:disabled)::-ms-thumb {
+  cursor: pointer;
+}
+/* Thumb
+ ========================================================================== */
+/*
+ * 1. Reset
+ * 2. Style
+ */
+/* Webkit */
+/* Firefox */
+/* Edge */
+/* IE11 */
+/* Edge + IE11 */
+/* Track
+ ========================================================================== */
+/*
+ * 1. Safari doesn't have a focus state. Using active instead.
+ */
+/* Webkit */
+/* Firefox */
+/* Edge */
+/* ========================================================================
+   Component: Form
+ ========================================================================== */
+/*
+ * 1. Define consistent box sizing.
+ *    Default is `content-box` with following exceptions set to `border-box`
+ *    `select`, `input[type="checkbox"]` and `input[type="radio"]`
+ *    `input[type="search"]` in Chrome, Safari and Opera
+ *    `input[type="color"]` in Firefox
+ * 2. Address margins set differently in Firefox/IE and Chrome/Safari/Opera.
+ * 3. Remove `border-radius` in iOS.
+ * 4. Change font properties to `inherit` in all browsers.
+ */
+/*
+ * Show the overflow in Edge.
+ */
+/*
+ * Remove the inheritance of text transform in Firefox.
+ */
+/*
+ * 1. Change font properties to `inherit` in all browsers
+ * 2. Don't inherit the `font-weight` and use `bold` instead.
+ * NOTE: Both declarations don't work in Chrome, Safari and Opera.
+ */
+/*
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+/*
+ * Remove the inner padding and cancel buttons in Chrome on OS X and Safari on OS X.
+ */
+/*
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+/*
+ * Removes placeholder transparency in Firefox.
+ */
+/*
+ * Improves consistency of cursor style for clickable elements
+ */
+.uk-radio:not(:disabled),
+.uk-checkbox:not(:disabled) {
+  cursor: pointer;
+}
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* Input, select and textarea
+ * Allowed: `text`, `password`, `datetime`, `datetime-local`, `date`,  `month`,
+            `time`, `week`, `number`, `email`, `url`, `search`, `tel`, `color`
+ * Disallowed: `range`, `radio`, `checkbox`, `file`, `submit`, `reset` and `image`
+ ========================================================================== */
+/*
+ * Remove default style in iOS.
+ */
+/*
+ * 1. Prevent content overflow if a fixed width is used
+ * 2. Take the full width
+ * 3. Reset default
+ * 4. Style
+ */
+/*
+ * Single-line
+ * 1. Allow any element to look like an `input` or `select` element
+ * 2. Make sure line-height is not larger than height
+ *    Also needed to center the text vertically
+ */
+/* 2 */
+/*
+ * Multi-line
+ */
+/* Focus */
+/* Disabled */
+/*
+ * Placeholder
+ */
+/* Style modifier (`uk-input`, `uk-select` and `uk-textarea`)
+ ========================================================================== */
+/*
+ * Small
+ */
+/*
+ * Large
+ */
+/* Style modifier (`uk-input`, `uk-select` and `uk-textarea`)
+ ========================================================================== */
+/*
+ * Error
+ */
+/*
+ * Success
+ */
+/*
+ * Blank
+ */
+/* Width modifiers (`uk-input`, `uk-select` and `uk-textarea`)
+ ========================================================================== */
+/*
+ * Fixed widths
+ * Different widths for mini sized `input` and `select` elements
+ */
+/* Select
+ ========================================================================== */
+/*
+ * 1. Remove default style. Also works in Firefox
+ * 2. Style
+ * 3. Remove default style in IE 10/11
+ * 4. Set `color` for options in the select dropdown, because the inherited `color` might be too light.
+ */
+/* 3 */
+/* 4 */
+/*
+ * Disabled
+ */
+/* Radio and checkbox
+ * Note: Does not work in IE11
+ ========================================================================== */
+/*
+ * 1. Style
+ * 2. Make box more robust so it clips the child element
+ * 3. Vertical alignment
+ * 4. Remove default style
+ * 5. Fix black background on iOS
+ * 6. Center icons
+ */
+/* Focus */
+/*
+ * Checked
+ */
+/* Focus */
+/*
+ * Icons
+ */
+/*
+ * Disabled
+ */
+/* Legend
+ ========================================================================== */
+/*
+ * Legend
+ * 1. Behave like block element
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove padding so people aren't caught out if they zero out fieldsets.
+ * 4. Style
+ */
+/* Custom controls
+ ========================================================================== */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Behave like most inline-block elements
+ */
+/*
+ * 1. Position and resize the form control to always cover its container
+ * 2. Required for Firefox for positioning to the left
+ * 3. Required for Webkit to make `height` work
+ * 4. Hide controle and show cursor
+ * 5. Needed for the cursor
+ * 6. Clip height caused by 5. Needed for Webkit only
+ */
+/* Label
+ ========================================================================== */
+/* Layout
+ ========================================================================== */
+/*
+ * Stacked
+ */
+/*
+ * Horizontal
+ */
+/* Tablet portrait and smaller */
+@media (max-width: 959px) {
+  /* Behave like `uk-form-stacked` */
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  /* Better vertical alignment if controls are checkboxes and radio buttons with text */
+}
+/* Icons
+ ========================================================================== */
+/*
+ * 1. Set position
+ * 2. Set width
+ * 3. Center icon vertically and horizontally
+ * 4. Style
+ */
+/*
+ * Required for `a`.
+ */
+/*
+ * Make `input` element clickable through icon, e.g. if it's a `span`
+ */
+/*
+ * Input padding
+ */
+/*
+ * Position modifier
+ */
+/* ========================================================================
+   Component: Button
+ ========================================================================== */
+/*
+ * 1. Remove margins in Chrome, Safari and Opera.
+ * 2. Remove borders for `button`.
+ * 3. Remove border-radius in Chrome.
+ * 4. Address `overflow` set to `hidden` in IE.
+ * 5. Correct `font` properties and `color` not being inherited for `button`.
+ * 6. Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 7. Style
+ * 8. `line-height` is used to create a height because it also centers the text vertically for `a` elements.
+ *    Better would be to use height and flexbox to center the text vertically but flexbox doesn't work in Firefox on `button` elements.
+ * 9. Align text if button has a width
+ * 10. Required for `a`.
+ */
+.uk-button:not(:disabled) {
+  cursor: pointer;
+}
+/*
+ * Remove the inner border and padding in Firefox.
+ */
+/* Hover */
+/* Focus */
+/* OnClick + Active */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Default
+ */
+/* Hover + Focus */
+/* OnClick + Active */
+/*
+ * Primary
+ */
+/* Hover + Focus */
+/* OnClick + Active */
+/*
+ * Secondary
+ */
+/* Hover + Focus */
+/* OnClick + Active */
+/*
+ * Danger
+ */
+/* Hover + Focus */
+/* OnClick + Active */
+/*
+ * Disabled
+ * The same for all style modifiers
+ */
+/* Size modifiers
+ ========================================================================== */
+/* Text modifiers
+ ========================================================================== */
+/*
+ * Text
+ * 1. Reset
+ * 2. Style
+ */
+/* Hover + Focus */
+/* Disabled */
+/*
+ * Link
+ * 1. Reset
+ * 2. Style
+ */
+/* Hover + Focus */
+/* Disabled */
+/* Group
+ ========================================================================== */
+/*
+ * 1. Using `flex` instead of `inline-block` to prevent whitespace betweent child elements
+ * 2. Behave like button
+ * 3. Create position context
+ */
+/* Group
+     ========================================================================== */
+/*
+     * Collapse border
+     */
+/*
+     * Create position context to superimpose the successor elements border
+     * Known issue: If you use an `a` element as button and an icon inside,
+     * the active state will not work if you click the icon inside the button
+     * Workaround: Just use a `button` or `input` element as button
+     */
+/* ========================================================================
+   Component: Section
+ ========================================================================== */
+/*
+ * 1. Make it work with `100vh` and height in general
+ */
+/* Desktop and bigger */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Size modifiers
+ ========================================================================== */
+/*
+ * XSmall
+ */
+/*
+ * Small
+ */
+/*
+ * Large
+ */
+/* Tablet landscape and bigger */
+/*
+ * XLarge
+ */
+/* Tablet landscape and bigger */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Default
+ */
+/*
+ * Muted
+ */
+/*
+ * Primary
+ */
+/*
+ * Secondary
+ */
+/* Overlap modifier
+ ========================================================================== */
+/*
+ * Reserved modifier to make a section overlap another section with an border image
+ * Implemented by the theme
+ */
+/* ========================================================================
+   Component: Container
+ ========================================================================== */
+/*
+ * 1. Box sizing has to be `content-box` so the max-width is always the same and
+ *    unaffected by the padding on different breakpoints. It's important for the size modifiers.
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/*
+ * Remove padding from nested containers
+ */
+/* Size modifier
+ ========================================================================== */
+/* ========================================================================
+   Component: Grid
+ ========================================================================== */
+/*
+ * 1. Allow cells to wrap into the next line
+ * 2. Reset list
+ */
+/*
+ * Grid cell
+ * Note: Space is allocated solely based on content dimensions, but shrinks: 0 1 auto
+ * Reset margin for e.g. paragraphs
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Gutter
+ ========================================================================== */
+/*
+ * Default
+ */
+/* Horizontal */
+/* Vertical */
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* Horizontal */
+  /* Vertical */
+}
+/*
+ * Small
+ */
+/* Horizontal */
+/* Vertical */
+/*
+ * Medium
+ */
+/* Horizontal */
+/* Vertical */
+/*
+ * Large
+ */
+/* Horizontal */
+/* Vertical */
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* Horizontal */
+  /* Vertical */
+}
+/*
+ * Collapse
+ */
+/* Horizontal */
+/* Vertical */
+/* Divider
+ ========================================================================== */
+/* Vertical */
+/*
+ * Default
+ */
+/* Horizontal */
+/* Vertical */
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* Horizontal */
+  /* Vertical */
+}
+/*
+ * Small
+ */
+/* Horizontal */
+/* Vertical */
+/*
+ * Medium
+ */
+/* Horizontal */
+/* Vertical */
+/*
+ * Large
+ */
+/* Horizontal */
+/* Vertical */
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* Horizontal */
+  /* Vertical */
+}
+/* Match child of a grid cell
+ ========================================================================== */
+/*
+ * Behave like a block element
+ * 1. Wrap into the next line
+ * 2. Take the full width, at least 100%. Only if no class from the Width component is set.
+ * 3. Expand width even if larger than 100%, e.g. because of negative margin (Needed for nested grids)
+ */
+/* ========================================================================
+   Component: Tile
+ ========================================================================== */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Size modifiers
+ ========================================================================== */
+/*
+ * XSmall
+ */
+/*
+ * Small
+ */
+/*
+ * Large
+ */
+/* Tablet landscape and bigger */
+/*
+ * XLarge
+ */
+/* Tablet landscape and bigger */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Default
+ */
+/*
+ * Muted
+ */
+/*
+ * Primary
+ */
+/*
+ * Secondary
+ */
+/* ========================================================================
+   Component: Card
+ ========================================================================== */
+/* Sections
+ ========================================================================== */
+/* Desktop and bigger */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Media
+ ========================================================================== */
+/*
+ * Reserved alignment modifier to style the media element, e.g. with `border-radius`
+ * Implemented by the theme
+ */
+/* Title
+ ========================================================================== */
+/* Badge
+ ========================================================================== */
+/*
+ * Remove margin from adjacent element
+ */
+/* Hover modifier
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Default
+ * Note: Header and Footer are only implemented for the default style
+ */
+/*
+ * Primary
+ */
+/*
+ * Secondary
+ */
+/* Size modifier
+ ========================================================================== */
+/*
+ * Small
+ */
+/*
+ * Large
+ */
+/* Desktop and bigger */
+/*
+     * Default
+     */
+/* Desktop and bigger */
+/*
+     * Small
+     */
+/*
+     * Large
+     */
+/* Desktop and bigger */
+/* ========================================================================
+   Component: Close
+ ========================================================================== */
+/*
+ * Adopts `uk-icon`
+ */
+/* Hover + Focus */
+/* ========================================================================
+   Component: Spinner
+ ========================================================================== */
+/*
+ * Adopts `uk-icon`
+ */
+/* SVG
+ ========================================================================== */
+/*
+ * Circle
+ */
+/* ========================================================================
+   Component: Totop
+ ========================================================================== */
+/*
+ * Addopts `uk-icon`
+ */
+/* Hover + Focus */
+/* OnClick */
+/* ========================================================================
+   Component: Marker
+ ========================================================================== */
+/*
+ * Addopts `uk-icon`
+ */
+/* Hover + Focus */
+/* ========================================================================
+   Component: Alert
+ ========================================================================== */
+/* Add margin if adjacent element */
+/*
+ * Remove margin from the last-child
+ */
+/* Close
+ * Adopts `uk-close`
+ ========================================================================== */
+/*
+ * Remove margin from adjacent element
+ */
+/*
+ * Hover + Focus
+ */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Primary
+ */
+/*
+ * Success
+ */
+/*
+ * Warning
+ */
+/*
+ * Danger
+ */
+/*
+     * Content
+     */
+/* ========================================================================
+   Component: Badge
+ ========================================================================== */
+/*
+ * 1. Style
+ * 2. Center child vertically and horizontally
+ */
+/*
+ * Required for `a`
+ */
+/* ========================================================================
+   Component: Label
+ ========================================================================== */
+/* Color modifiers
+ ========================================================================== */
+/*
+ * Success
+ */
+/*
+ * Warning
+ */
+/*
+ * Danger
+ */
+/* ========================================================================
+   Component: Overlay
+ ========================================================================== */
+/*
+ * Remove margin from the last-child
+ */
+/* Icon
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Default
+ */
+/*
+ * Primary
+ */
+/* ========================================================================
+   Component: Article
+ ========================================================================== */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Adjacent sibling
+ ========================================================================== */
+/* Title
+ ========================================================================== */
+/* Tablet landscape and bigger */
+/* Meta
+ ========================================================================== */
+/* ========================================================================
+   Component: Comment
+ ========================================================================== */
+/* Sections
+ ========================================================================== */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Title
+ ========================================================================== */
+/* Meta
+ ========================================================================== */
+/* Avatar
+ ========================================================================== */
+/* List
+ ========================================================================== */
+/* Adjacent siblings */
+/*
+ * Sublists
+ * Note: General sibling selector allows reply block between comment and sublist
+ */
+/* Tablet and bigger */
+/* Adjacent siblings */
+/* Style modifier
+ ========================================================================== */
+/* ========================================================================
+   Component: Search
+ ========================================================================== */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Reset `form`
+ */
+/* Input
+ ========================================================================== */
+/*
+ * Remove the inner padding and cancel buttons in Chrome on OS X and Safari on OS X.
+ */
+/*
+ * Removes placeholder transparency in Firefox.
+ */
+/*
+ * 1. Define consistent box sizing.
+ * 2. Address margins set differently in Firefox/IE and Chrome/Safari/Opera.
+ * 3. Remove `border-radius` in iOS.
+ * 4. Change font properties to `inherit` in all browsers
+ * 5. Show the overflow in Edge.
+ * 6. Remove default style in iOS.
+ * 7. Vertical alignment
+ * 8. Take the full container width
+ * 9. Style
+ */
+/* Placeholder */
+/* Icon (Adopts `uk-icon`)
+ ========================================================================== */
+/*
+ * Remove default focus style
+ */
+/*
+ * Position above input
+ * 1. Set position
+ * 2. Center icon vertically and horizontally
+ * 3. Style
+ */
+/*
+ * Required for `a`.
+ */
+/*
+ * Make `input` element clickable through icon, e.g. if it's a `span`
+ */
+/*
+ * Position modifier
+ */
+/* Default modifier
+ ========================================================================== */
+/*
+ * Input
+ */
+/* Focus */
+/*
+ * Icon
+ */
+/* Navbar modifier
+ ========================================================================== */
+/*
+ * Input
+ */
+/*
+ * Icon
+ */
+/* Large modifier
+ ========================================================================== */
+/*
+ * Input
+ */
+/*
+ * Icon
+ */
+/* Toggle
+ ========================================================================== */
+/* Hover + Focus */
+/* ========================================================================
+   Component: Nav
+ ========================================================================== */
+/*
+ * Reset
+ * 1. Prepare lists
+ * 2. Prepare links
+ * 3. Remove default focus style
+ */
+/* 1 */
+.uk-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* 2 */
+.uk-nav li > a {
+  display: block;
+  text-decoration: none;
+}
+/* 3 */
+.uk-nav li > a:focus {
+  outline: none;
+}
+/*
+ * Items
+ * Must target `a` elements to exclude other elements (e.g. lists)
+ */
+.uk-nav > li > a {
+  padding: 5px 0;
+}
+/* Sublists
+ ========================================================================== */
+/*
+ * Level 2
+ * `ul` needed for higher specificity to override padding
+ */
+/*
+ * Level 3 and deeper
+ */
+/*
+ * Items
+ */
+/* Parent icon modifier
+ ========================================================================== */
+/* Header
+ ========================================================================== */
+.uk-nav-header {
+  padding: 5px 0;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+/* Divider
+ ========================================================================== */
+.uk-nav-divider {
+  margin: 5px 0;
+}
+/* Default modifier
+ ========================================================================== */
+/*
+ * Items
+ */
+/* Hover + Focus */
+/* Active */
+/*
+ * Header
+ */
+/*
+ * Divider
+ */
+/*
+ * Sublists
+ */
+/* Primary modifier
+ ========================================================================== */
+/*
+ * Items
+ */
+/* Hover + Focus */
+/* Active */
+/*
+ * Header
+ */
+/*
+ * Divider
+ */
+/*
+ * Sublists
+ */
+/* Alignment modifier
+ ========================================================================== */
+/* Sublists */
+/* Parent icon modifier  */
+/* ========================================================================
+   Component: Navbar
+ ========================================================================== */
+/*
+ * 1. Create position context to center navbar group
+ */
+/* Container
+ ========================================================================== */
+.uk-navbar-container:not(.uk-navbar-transparent) {
+  background: #f8f8f8;
+  position: relative;
+}
+/*
+ * Remove pseudo elements created by micro clearfix as precaution (if Container component is used)
+ */
+.uk-navbar-container > ::before,
+.uk-navbar-container > ::after {
+  display: none !important;
+}
+/* Groups
+ ========================================================================== */
+/*
+ * 1. Align navs and items vertically if they have a different height
+ * 2. Note: IE 11 requires an extra `div` which affects the center selector
+ */
+.uk-navbar-right {
+  display: flex;
+  /* 1 */
+  align-items: center;
+}
+/*
+ * Horizontal alignment
+ * 1. Create position context for centered navbar with sub groups (left/right)
+ * 2. Needed for dropdowns because a new position context is created
+ *    `z-index` must be smaller than off-canvas
+ * 3. Fix text wrapping if the centered section is larger than 50% of the navbar
+ * 4. Align sub groups for centered navbar
+ */
+/* 3 */
+/* 4 */
+/* Nav
+ ========================================================================== */
+/*
+ * 1. Reset list
+ */
+.uk-navbar-nav {
+  display: flex;
+  /* 1 */
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/*
+ * Allow items to wrap into the next line
+ * Only not `absolute` positioned groups
+ */
+.uk-navbar-right {
+  flex-wrap: wrap;
+}
+/*
+ * Items
+ * 1. Center content vertically and horizontally
+ * 2. Dimensions
+ * 3. Style
+ * 4. Required for `a`
+ */
+.uk-navbar-nav > li > a {
+  /* 1 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 2 */
+  box-sizing: border-box;
+  height: 80px;
+  padding: 0 15px;
+  /* 3 */
+  font-size: 0.875rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  /* 4 */
+  text-decoration: none;
+}
+/*
+ * Nav items
+ */
+.uk-navbar-nav > li > a {
+  color: #999;
+  text-transform: uppercase;
+  transition: 0.1s ease-in-out;
+  transition-property: color, background-color;
+}
+/*
+ * Hover
+ * Apply hover style also to focus state and if dropdown is opened
+ */
+.uk-navbar-nav > li:hover > a,
+.uk-navbar-nav > li > a:focus {
+  color: #666;
+  outline: none;
+}
+/* OnClick */
+.uk-navbar-nav > li > a:active {
+  color: #333;
+}
+/* Active */
+/* Item
+ ========================================================================== */
+/* Toggle
+ ========================================================================== */
+/*
+ * Icon
+ * Adopts `uk-icon`
+ */
+/* Hover + Focus */
+/* Subtitle
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/* Dropdown
+ ========================================================================== */
+/*
+ * Adopts `uk-dropdown`
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Set a default width
+ * 4. Style
+ */
+.uk-navbar-dropdown {
+  /* 1 */
+  display: none;
+  /* 2 */
+  position: absolute;
+  z-index: 1020;
+  /* 3 */
+  box-sizing: border-box;
+  width: 200px;
+  /* 4 */
+  padding: 25px;
+  background: #fff;
+  color: #666;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+/* Show */
+/*
+ * Direction / Alignment modifiers
+ */
+/* Direction */
+/*
+ * Grid
+ * Adopts `uk-grid`
+ */
+/* Gutter Horizontal */
+.uk-navbar-dropdown-grid {
+  margin-right: -50px;
+}
+.uk-navbar-dropdown-grid > * {
+  padding-right: 50px;
+}
+/* Gutter Vertical */
+/* Stack */
+/*
+ * Width modifier
+ */
+.uk-navbar-dropdown-width-5:not(.uk-navbar-dropdown-stack) {
+  width: 1000px;
+}
+/*
+ * Dropbar modifier
+ */
+/* Dropdown Nav
+ * Adopts `uk-nav`
+ ========================================================================== */
+.uk-navbar-dropdown-nav {
+  font-size: 0.875rem;
+}
+/*
+ * Items
+ */
+.uk-navbar-dropdown-nav > li > a {
+  color: #999;
+}
+/* Hover + Focus */
+.uk-navbar-dropdown-nav > li > a:hover,
+.uk-navbar-dropdown-nav > li > a:focus {
+  color: #666;
+}
+/* Active */
+.uk-navbar-dropdown-nav > li.uk-active > a {
+  color: #333;
+}
+/*
+ * Header
+ */
+.uk-navbar-dropdown-nav .uk-nav-header {
+  color: #333;
+}
+/*
+ * Divider
+ */
+.uk-navbar-dropdown-nav .uk-nav-divider {
+  border-top: 1px solid #e5e5e5;
+}
+/*
+ * Sublists
+ */
+/* Dropbar
+ ========================================================================== */
+/*
+ * Slide modifier
+ */
+/*
+     * Navbar
+     */
+/*
+     * Grid Divider
+     */
+.uk-navbar-dropdown-grid > * {
+  position: relative;
+}
+.uk-navbar-dropdown-grid > :not(.uk-first-column)::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  border-right: 1px solid #e5e5e5;
+}
+/* Vertical */
+/* ========================================================================
+   Component: Subnav
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Gutter
+ * 3. Reset list
+ */
+/*
+ * 1. Space is allocated solely based on content dimensions: 0 0 auto
+ * 2. Gutter
+ * 3. Create position context for dropdowns
+ */
+/* Items
+ ========================================================================== */
+/*
+ * Items must target `a` elements to exclude other elements (e.g. dropdowns)
+ * Using `:first-child` instead of `a` to support `span` elements for text
+ * 1. Prevent gap if child element is `inline-block`, e.g. an icon
+ * 2. Style
+ */
+/* Hover + Focus */
+/* Active */
+/* Divider modifier
+ ========================================================================== */
+/*
+ * 1. Align items and divider vertically
+ */
+/*
+ * Divider
+ * `nth-child` makes it also work without JS if it's only one row
+ */
+/* Pill modifier
+ ========================================================================== */
+/* Hover + Focus */
+/* OnClick */
+/* Active */
+/* Disabled
+ * The same for all style modifiers
+ ========================================================================== */
+/* ========================================================================
+   Component: Breadcrumb
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Reset list
+ */
+/*
+ * Space is allocated solely based on content dimensions: 0 0 auto
+ */
+/* Items
+ ========================================================================== */
+/* Hover + Focus */
+.uk-breadcrumb > * > :hover,
+.uk-breadcrumb > * > :focus {
+  color: #666;
+  text-decoration: none;
+}
+/* Disabled */
+/* Active */
+/*
+ * Divider
+ * `nth-child` makes it also work without JS if it's only one row
+ */
+/* ========================================================================
+   Component: Pagination
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Gutter
+ * 3. Reset list
+ */
+/*
+ * 1. Space is allocated solely based on content dimensions: 0 0 auto
+ * 2. Gutter
+ * 3. Create position context for dropdowns
+ */
+/* Items
+ ========================================================================== */
+/*
+ * 1. Prevent gap if child element is `inline-block`, e.g. an icon
+ * 2. Style
+ */
+/* Hover + Focus */
+.uk-pagination > * > :hover,
+.uk-pagination > * > :focus {
+  color: #666;
+  text-decoration: none;
+}
+/* Active */
+/* Disabled */
+/* ========================================================================
+   Component: Tab
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Gutter
+ * 3. Reset list
+ */
+/*
+ * 1. Space is allocated solely based on content dimensions: 0 0 auto
+ * 2. Gutter
+ * 3. Create position context for dropdowns
+ */
+/* Items
+ ========================================================================== */
+/*
+ * Items must target `a` elements to exclude other elements (e.g. dropdowns)
+ * 1. Center text if a width is set
+ * 2. Style
+ */
+/* Hover + Focus */
+/* Active */
+/* Disabled */
+/* Position modifier
+ ========================================================================== */
+/*
+ * Bottom
+ */
+/*
+ * Left + Right
+ * 1. Reset Gutter
+ */
+/* 1 */
+/* ========================================================================
+   Component: Slidenav
+ ========================================================================== */
+/*
+ * Adopts `uk-icon`
+ */
+/* Hover + Focus */
+/* OnClick */
+/* Icon modifier
+ ========================================================================== */
+/*
+ * Previous
+ */
+/*
+ * Next
+ */
+/* Size modifier
+ ========================================================================== */
+/* Container
+ ========================================================================== */
+/* ========================================================================
+   Component: Dotnav
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Reset list
+ * 3. Gutter
+ */
+/*
+ * 1. Space is allocated solely based on content dimensions: 0 0 auto
+ * 2. Gutter
+ */
+/* Items
+ ========================================================================== */
+/*
+ * Items
+ * 1. Hide text if present
+ */
+/* Hover + Focus */
+.uk-dotnav > * > :hover,
+.uk-dotnav > * > :focus {
+  background-color: rgba(102, 102, 102, 0.6);
+  outline: none;
+  border-color: transparent;
+}
+/* OnClick */
+.uk-dotnav > * > :active {
+  background-color: rgba(102, 102, 102, 0.2);
+  border-color: transparent;
+}
+/* Active */
+/* Modifier: 'uk-dotnav-vertical'
+ ========================================================================== */
+/*
+ * 1. Change direction
+ * 2. Gutter
+ */
+/* 2 */
+/* ========================================================================
+   Component: Thumbnav
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Reset list
+ * 3. Gutter
+ */
+/*
+ * Space is allocated based on content dimensions, but shrinks: 0 1 auto
+ * 1. Gutter
+ */
+/* Items
+ ========================================================================== */
+/*
+ * Items
+ */
+/* Hover + Focus */
+.uk-thumbnav > * > :hover,
+.uk-thumbnav > * > :focus {
+  outline: none;
+}
+.uk-thumbnav > * > :hover::after,
+.uk-thumbnav > * > :focus::after {
+  background-color: transparent;
+}
+/* Active */
+/* Modifier: 'uk-thumbnav-vertical'
+ ========================================================================== */
+/*
+ * 1. Change direction
+ * 2. Gutter
+ */
+/* 2 */
+/* ========================================================================
+   Component: Accordion
+ ========================================================================== */
+/* Item
+ ========================================================================== */
+/* Title
+ ========================================================================== */
+/* Hover + Focus */
+/* Content
+ ========================================================================== */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* ========================================================================
+   Component: Drop
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Set a default width
+ */
+/* Show */
+/* Direction / Alignment modifiers
+ ========================================================================== */
+/* Direction */
+/* Grid modifiers
+ ========================================================================== */
+/* ========================================================================
+   Component: Dropdown
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Set a default width
+ * 4. Style
+ */
+/* Show */
+/* Nav
+ * Adopts `uk-nav`
+ ========================================================================== */
+/*
+ * Items
+ */
+/* Hover + Focus + Active */
+/*
+ * Header
+ */
+/*
+ * Divider
+ */
+/*
+ * Sublists
+ */
+/* Direction / Alignment modifiers
+ ========================================================================== */
+/* Direction */
+/* Grid modifiers
+ ========================================================================== */
+/* ========================================================================
+   Component: Modal
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Allow scrolling for the modal dialog
+ * 4. Horizontal padding
+ * 5. Mask the background page
+ * 6. Fade-in transition
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/*
+ * Open
+ */
+/* Page
+ ========================================================================== */
+/*
+ * Prevent scrollbars
+ */
+/* Dialog
+ ========================================================================== */
+/*
+ * 1. Create position context for spinner and close button
+ * 2. Dimensions
+ * 3. Fix `max-width: 100%` not working in combination with flex and responsive images in IE11
+ *    `!important` needed to overwrite `uk-width-auto`. See `#modal-media-image` in tests
+ * 4. Style
+ * 5. Slide-in transition
+ */
+/*
+ * Open
+ */
+/* Size modifier
+ ========================================================================== */
+/*
+ * Container size
+ * Take the same size as the Container component
+ */
+/*
+ * Full size
+ * 1. Remove padding and background from modal
+ * 2. Reset all default declarations from modal dialog
+ */
+/* 1 */
+/* 2 */
+/* Sections
+ ========================================================================== */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Title
+ ========================================================================== */
+/* Close
+ * Adopts `uk-close`
+ ========================================================================== */
+/*
+ * Remove margin from adjacent element
+ */
+/*
+ * Hover
+ */
+/*
+ * Default
+ */
+/*
+ * Outside
+ * 1. Prevent scrollbar on small devices
+ */
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  /* 1 */
+}
+/*
+ * Full
+ */
+/* ========================================================================
+   Component: Lightbox
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ * 3. Allow scrolling for the modal dialog
+ * 4. Horizontal padding
+ * 5. Mask the background page
+ * 6. Fade-in transition
+ */
+/*
+ * Open
+ * 1. Center child
+ * 2. Fade-in
+ */
+/* Page
+ ========================================================================== */
+/*
+ * Prevent scrollbars
+ */
+/* Item
+ ========================================================================== */
+/*
+ * 1. Center child within the viewport
+ * 2. Not visible by default
+ * 3. Color needed for spinner icon
+ * 4. Optimize animation
+ * 5. Responsiveness
+ *    Using `vh` for `max-height` to fix image proportions after resize in Safari and Opera
+ *    Using `vh` and `vw` to make responsive image work in IE11
+ */
+/* 5 */
+/* Toolbar
+ ========================================================================== */
+/* Toolbar Icon (Close)
+ ========================================================================== */
+/*
+ * Hover
+ */
+/* Button (Slidenav)
+ ========================================================================== */
+/*
+ * 1. Center icon vertically and horizontally
+ */
+/*
+ * Hover
+ */
+/* Caption
+ ========================================================================== */
+/* Iframe
+ ========================================================================== */
+/* ========================================================================
+   Component: Slideshow
+ ========================================================================== */
+/*
+ * 1. Prevent tab highlighting on iOS.
+ */
+/* Items
+ ========================================================================== */
+/*
+ * 1. Create position and stacking context
+ * 2. Reset list
+ * 3. Clip child elements
+ * 4. Prevent displaying the callout information on iOS.
+ */
+/* Item
+ ========================================================================== */
+/*
+ * 1. Position items above each other
+ * 2. Take the full width
+ * 3. Clip child elements, e.g. for `uk-cover`
+ * 4. Optimize animation
+ * 5. Disable horizontal panning gestures in IE11 and Edge
+ */
+/*
+ * Hide not active items
+ */
+/* ========================================================================
+   Component: Slider
+ ========================================================================== */
+/*
+ * 1. Prevent tab highlighting on iOS.
+ */
+/* Container
+ ========================================================================== */
+/*
+ * 1. Clip child elements
+ */
+/* Items
+ ========================================================================== */
+/*
+ * 1. Optimize animation
+ * 2. Create a containing block. In Safari it's neither created by `transform` nor `will-change`.
+ */
+/*
+ * 1. Reset list style without interfering with grid
+ * 2. Prevent displaying the callout information on iOS.
+ */
+/* Item
+ ========================================================================== */
+/*
+ * 1. Let items take content dimensions (0 0 auto)
+ * 2. Create position context
+ * 3. Disable horizontal panning gestures in IE11 and Edge
+ */
+/* ========================================================================
+   Component: Sticky
+ ========================================================================== */
+/*
+ * 1. Resolve frame rate issues on devices with lower frame rates by forcing hardware acceleration
+ */
+/*
+ * Faster animations
+ */
+/* ========================================================================
+   Component: Off-canvas
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Set position
+ */
+/*
+ * Flip modifier
+ */
+/* Bar
+ ========================================================================== */
+/*
+ * 1. Set position
+ * 2. Size and style
+ * 3. Allow scrolling
+ * 4. Transform
+ */
+/* Tablet landscape and bigger */
+/* Flip modifier */
+/*
+ * Open
+ */
+/*
+ * Slide Animation (Used in slide and push mode)
+ */
+/*
+ * Reveal Animation
+ * 1. Set position
+ * 2. Clip the bar
+ * 3. Animation
+ * 4. Reset transform
+ */
+/* Tablet landscape and bigger */
+/*
+ * Flip modifier
+ */
+/* Close
+ * Adopts `uk-close`
+ ========================================================================== */
+/* Overlay
+ ========================================================================== */
+/*
+ * Overlay the whole page. Needed for the `::before`
+ * 1. Using `100vw` so no modification is needed when off-canvas is flipped
+ * 2. Allow for closing with swipe gesture on devices with pointer events.
+ */
+/*
+ * 1. Mask the whole page
+ * 2. Fade-in transition
+ */
+/* Container
+ ========================================================================== */
+/*
+ * Prevent horizontal scrollbar when the content is slide-out
+ * Has to be on the `html` element too to make it work on the `body`
+ */
+/*
+ * Prevent all scrollbars if overlay is used
+ */
+/* Content
+ ========================================================================== */
+/*
+ * Prepare slide-out animation (Used in reveal and push mode)
+ * Using `position: left` instead of `transform` because position `fixed` elements like sticky navbars
+ * lose their fixed state and behaves like `absolute` within a transformed container
+ * Note: JS sets a fixed width and height so the page can slide-out without shrinking
+ * 1. Smooth scrolling
+ */
+/* Disable scrolling if overlay mode */
+/*
+ * Activate slide-out animation
+ */
+/* Tablet landscape and bigger */
+/* ========================================================================
+   Component: Switcher
+ ========================================================================== */
+/*
+ * Reset list
+ */
+/* Items
+ ========================================================================== */
+/*
+ * Hide not active items
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* ========================================================================
+   Component: Leader
+ ========================================================================== */
+/*
+ * 1. Place element in text flow
+ * 2. Never break into a new line
+ * 3. Get a string back with as many repeating characters to fill the container
+ * 4. Prevent wrapping. Overflowing characters will be clipped by the container
+ */
+/*
+ * Hide if media does not match
+ */
+/* Pass fill character to JS */
+/* ========================================================================
+   Component: Iconnav
+ ========================================================================== */
+/*
+ * 1. Allow items to wrap into the next line
+ * 2. Reset list
+ * 3. Gutter
+ */
+/*
+ * 1. Space is allocated solely based on content dimensions: 0 0 auto
+ * 2. Gutter
+ */
+/* Items
+ ========================================================================== */
+/*
+ * Items must target `a` elements to exclude other elements (e.g. dropdowns)
+ * 1. Prevent gap if child element is `inline-block`, e.g. an icon
+ * 2. Style
+ */
+/* Hover + Focus */
+/* Active */
+/* Modifier: 'uk-iconnav-vertical'
+ ========================================================================== */
+/*
+ * 1. Change direction
+ * 2. Gutter
+ */
+/* 2 */
+/* ========================================================================
+   Component: Notification
+ ========================================================================== */
+/*
+ * 1. Set position
+ * 2. Dimensions
+ */
+/* Position modifiers
+========================================================================== */
+/* Responsiveness
+========================================================================== */
+/* Phones portrait and smaller */
+/* Message
+========================================================================== */
+/* Close
+ * Adopts `uk-close`
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/*
+ * Primary
+ */
+/*
+ * Success
+ */
+/*
+ * Warning
+ */
+/*
+ * Danger
+ */
+/* ========================================================================
+   Component: Tooltip
+ ========================================================================== */
+/*
+ * 1. Hide by default
+ * 2. Position
+ * 3. Dimensions
+ * 4. Style
+ */
+/* Show */
+/* Direction / Alignment modifiers
+ ========================================================================== */
+/* Direction */
+/* ========================================================================
+   Component: Placeholder
+ ========================================================================== */
+/* Add margin if adjacent element */
+/*
+ * Remove margin from the last-child
+ */
+/* ========================================================================
+   Component: Progress
+ ========================================================================== */
+/*
+ * 1. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ * 2. Remove default style
+ * 3. Behave like a block element
+ * 4. Remove borders in Firefox and Edge
+ * 5. Set background color for progress container in Firefox, IE11 and Edge
+ * 6. Style
+ */
+/* Add margin if adjacent element */
+/*
+ * Remove animated circles for indeterminate state in IE11 and Edge
+ */
+/*
+ * Progress container
+ * 2. Remove progress bar for indeterminate state in Firefox
+ */
+/* 2 */
+/*
+ * Progress bar
+ * 1. Remove right border in IE11 and Edge
+ */
+/* ========================================================================
+   Component: Sortable
+ ========================================================================== */
+/*
+ * Deactivate browser touch actions in IE11 and Edge
+ */
+/*
+ * Deactivate pointer-events on SVGs in Safari
+ */
+/*
+ * Remove margin from the last-child
+ */
+/* Drag
+ ========================================================================== */
+/* Placeholder
+ ========================================================================== */
+/* Empty modifier
+ ========================================================================== */
+/* Handle
+ ========================================================================== */
+/* Hover */
+/* ========================================================================
+   Component: Countdown
+ ========================================================================== */
+/* Item
+ ========================================================================== */
+/*
+ * 1. Center numbers and separators vertically
+ */
+/* Number
+ ========================================================================== */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Separator
+ ========================================================================== */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Label
+ ========================================================================== */
+/* ========================================================================
+   Component: Animation
+ ========================================================================== */
+/* Direction modifier
+ ========================================================================== */
+/* Animations for scrollspy
+ ========================================================================== */
+/*
+ * Fade
+ */
+/*
+ * Scale
+ */
+/*
+ * Slide
+ */
+/*
+ * Slide Small
+ */
+/*
+ * Slide Medium
+ */
+/*
+ * Kenburns
+ */
+/*
+ * Shake
+ */
+/* Duration modifier
+ ========================================================================== */
+/* Enable animation only on hover
+========================================================================== */
+/*
+ * Note: Firefox and IE needs this because animations are not triggered when switching between display `none` and `block`
+ */
+.uk-animation-toggle:not(:hover):not(.uk-hover) [class*='uk-animation-'] {
+  animation-name: none;
+}
+/* Keyframes used by animation classes
+ ========================================================================== */
+/*
+ * Fade
+ */
+/*
+ * Slide Top
+ */
+/*
+ * Slide Bottom
+ */
+/*
+ * Slide Left
+ */
+/*
+ * Slide Right
+ */
+/*
+ * Slide Top Small
+ */
+/*
+ * Slide Bottom Small
+ */
+/*
+ * Slide Left Small
+ */
+/*
+ * Slide Right Small
+ */
+/*
+ * Slide Top Medium
+ */
+/*
+ * Slide Bottom Medium
+ */
+/*
+ * Slide Left Medium
+ */
+/*
+ * Slide Right Medium
+ */
+/*
+ * Scale Up
+ */
+/*
+ * Scale Down
+ */
+/*
+ * Kenburns
+ */
+/*
+ * Shake
+ */
+/* ========================================================================
+   Component: Width
+ ========================================================================== */
+/* Equal child widths
+ ========================================================================== */
+[class*='uk-child-width'] > * {
+  box-sizing: border-box;
+  width: 100%;
+}
+.uk-child-width-1-5 > * {
+  width: 20%;
+}
+/*
+ *    Instead of 0, 1px is needed to make cell wrap into next row if predecessor is 100% wide
+ *    and the grid gutter is 0 pixels wide
+ */
+/*
+ * 1. Make `width: 1px` work, because according to the spec flex items won’t shrink
+ *    below their minimum content size. To change this, set the min-width.
+ *    Only needed for Firefox. All other browsers ignore this.
+ *
+ * 2. `width` is ignored when wrapping flex items in Safari
+ *    https://github.com/philipwalton/flexbugs#11-min-and-max-size-declarations-are-ignored-when-wrapping-flex-items
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/* Single Widths
+ ========================================================================== */
+/*
+ * 1. `max-width` is needed for the pixel-based classes
+ */
+/* Halves */
+/* Thirds */
+/* Quarters */
+/* Fifths */
+/* Sixths */
+/* Pixel */
+/* Auto */
+/* Expand */
+/* Phone landscape and bigger */
+@media (min-width: 640px) {
+  /* Whole */
+  /* Halves */
+  /* Thirds */
+  /* Quarters */
+  /* Fifths */
+  /* Sixths */
+  /* Pixel */
+  /* Auto */
+  /* Expand */
+}
+/* Tablet landscape and bigger */
+@media (min-width: 960px) {
+  /* Whole */
+  /* Halves */
+  /* Thirds */
+  /* Quarters */
+  /* Fifths */
+  /* Sixths */
+  /* Pixel */
+  /* Auto */
+  /* Expand */
+}
+/* Desktop and bigger */
+@media (min-width: 1200px) {
+  /* Whole */
+  /* Halves */
+  /* Thirds */
+  /* Quarters */
+  /* Fifths */
+  /* Sixths */
+  /* Pixel */
+  /* Auto */
+  /* Expand */
+}
+/* Large screen and bigger */
+@media (min-width: 1600px) {
+  /* Whole */
+  /* Halves */
+  /* Thirds */
+  /* Quarters */
+  /* Fifths */
+  /* Sixths */
+  /* Pixel */
+  /* Auto */
+  /* Expand */
+}
+/* ========================================================================
+   Component: Height
+ ========================================================================== */
+/*
+ * Only works if parent element has a height set
+ */
+/*
+ * Useful to create image teasers
+ */
+/*
+ * Pixel
+ * Useful for `overflow: auto`
+ */
+/* ========================================================================
+   Component: Text
+ ========================================================================== */
+/* Style modifiers
+ ========================================================================== */
+/* Size modifiers
+ ========================================================================== */
+/* Weight modifier
+ ========================================================================== */
+/* Transform modifier
+ ========================================================================== */
+/* Color modifiers
+ ========================================================================== */
+/* Background modifier
+ ========================================================================== */
+/*
+ * 1. The background clips to the foreground text. Works in Chrome, Firefox, Safari, Edge and Opera
+ *    Default color is set to transparent
+ * 2. Container fits the text
+ * 3. Fallback color for IE11
+ */
+@supports (-webkit-background-clip: text) {
+}
+/* Alignment modifiers
+ ========================================================================== */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/*
+ * Vertical
+ */
+/* Wrap modifiers
+ ========================================================================== */
+/*
+ * Prevent text from wrapping onto multiple lines
+ */
+/*
+ * 1. Make sure a max-width is set after which truncation can occur
+ * 2. Prevent text from wrapping onto multiple lines, and truncate with an ellipsis
+ * 3. Fix for table cells
+ */
+/* 2 */
+/*
+ * 1. Wrap long words onto the next line and break them if they are too long to fit
+ * 2. Legacy `word-wrap` as fallback for `overflow-wrap`
+ * 3. Fix `overflow-wrap` which doesn't work with table cells in Chrome, Opera, IE11 and Edge
+ *    Must use `break-all` to support IE11 and Edge
+ * Note: Not using `hyphens: auto;` because it hyphenates text even if not needed
+ */
+/* 3 */
+/* ========================================================================
+   Component: Column
+ ========================================================================== */
+/* Desktop and bigger */
+/*
+ * Fix image 1px line wrapping into the next column in Chrome
+ */
+/* Divider
+ ========================================================================== */
+/*
+ * 1. Double the column gap
+ */
+/* Desktop and bigger */
+/* Width modifiers
+ ========================================================================== */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/* Make element span across all columns
+ * Does not work in Firefox yet
+ ========================================================================== */
+/* ========================================================================
+   Component: Cover
+ ========================================================================== */
+/*
+ * Works with iframes and embedded content
+ * 1. Reset responsiveness for embedded content
+ * 2. Center object
+ * Note: Percent values on the `top` property only works if this element
+ *       is absolute positioned or if the container has a height
+ */
+/* Container
+ ========================================================================== */
+/*
+ * 1. Parent container which clips resized object
+ * 2. Needed if the child is positioned absolute. See note above
+ */
+/* ========================================================================
+   Component: Background
+ ========================================================================== */
+/* Color
+ ========================================================================== */
+/* Size
+ ========================================================================== */
+/* Position
+ ========================================================================== */
+/* Repeat
+ ========================================================================== */
+/* Attachment
+ ========================================================================== */
+/*
+ * 1. Fix bug introduced in Chrome 67: the background image is not visible if any element on the page uses `translate3d`
+ */
+/*
+ * Exclude touch devices because `fixed` doesn't work on iOS and Android
+ */
+/* Image
+ ========================================================================== */
+/* Phone portrait and smaller */
+/* Phone landscape and smaller */
+/* Tablet landscape and smaller */
+/* Desktop and smaller */
+/* Blend modes
+ ========================================================================== */
+/* ========================================================================
+   Component: Align
+ ========================================================================== */
+/*
+ * Default
+ */
+/*
+ * Center
+ */
+/*
+ * Left/Right
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/* ========================================================================
+   Component: SVG
+ ========================================================================== */
+/*
+ * 1. Fill all SVG elements with the current text color if no `fill` attribute is set
+ * 2. Set the fill and stroke color of all SVG elements to the current text color
+ * 3. Fix for uppercase attribute names in Edge. Will be fixed in Windows 10 builds 16251+
+ */
+/* 1 */
+/*
+ * Fix Firefox blurry SVG rendering: https://bugzilla.mozilla.org/show_bug.cgi?id=1046835
+ */
+/* ========================================================================
+   Component: Utility
+ ========================================================================== */
+/* Panel
+ ========================================================================== */
+/*
+ * Micro clearfix
+ */
+/*
+ * Remove margin from the last-child
+ */
+/*
+ * Scrollable
+ */
+/* Clearfix
+ ========================================================================== */
+/*
+ * 1. `table-cell` is used with `::before` because `table` creates a 1px gap when it becomes a flex item, only in Webkit
+ * 2. `table` is used again with `::after` because `clear` only works with block elements.
+ * Note: `display: block` with `overflow: hidden` is currently not working in the latest Safari
+ */
+/* 1 */
+/* 2 */
+/* Float
+ ========================================================================== */
+/*
+ * 1. Prevent content overflow
+ */
+/* 1 */
+/* Overfow
+ ========================================================================== */
+/*
+ * Enable scrollbars if content is clipped
+ * Note: Firefox ignores `padding-bottom` for the scrollable overflow https://bugzilla.mozilla.org/show_bug.cgi?id=748518
+ */
+/* Resize
+ ========================================================================== */
+/* Display
+ ========================================================================== */
+/* Inline
+ ========================================================================== */
+/*
+ * 1. Container fits its content
+ * 2. Create position context
+ * 3. Prevent content overflow
+ * 4. Behave like most inline-block elements
+ * 5. Force hardware acceleration without creating a new stacking context
+ *    to fix 1px glitch when combined with overlays and transitions in Webkit
+ * 6. Clip child elements
+ */
+/* Responsive objects
+ ========================================================================== */
+/*
+ * Preserve original dimensions
+ * Because `img, `video`, `canvas` and  `audio` are already responsive by default, see Base component
+ */
+/*
+ * Responsiveness
+ * Corrects `max-width` and `max-height` behavior if padding and border are used
+ */
+/*
+ * 1. Set a maximum width. `important` needed to override `uk-preserve-width img`
+ * 2. Auto scale the height. Only needed if `height` attribute is present
+ */
+/*
+ * 1. Set a maximum height. Only works if the parent element has a fixed height
+ * 2. Auto scale the width. Only needed if `width` attribute is present
+ * 3. Reset max-width, which `img, `video`, `canvas` and  `audio` already have by default
+ */
+/* Border
+ ========================================================================== */
+/*
+ * Fix `overflow: hidden` to be ignored with border-radius and CSS transforms in Webkit
+ */
+/* Box-shadow
+ ========================================================================== */
+/*
+ * Hover
+ */
+/* Box-shadow bottom
+ ========================================================================== */
+/*
+ * 1. Set position.
+ * 2. Set style
+ * 3. Blur doesn't work on pseudo elements with negative `z-index` in Edge.
+ *    Solved by using `before` and add position context to child elements.
+ */
+@supports (filter: blur(0)) {
+  /* 3 */
+}
+/* Drop cap
+ ========================================================================== */
+/*
+ * 1. Firefox doesn't apply `::first-letter` if the first letter is inside child elements
+ *    https://bugzilla.mozilla.org/show_bug.cgi?id=214004
+ * 2. In Firefox, a floating `::first-letter` doesn't have a line box and there for no `line-height`
+ *    https://bugzilla.mozilla.org/show_bug.cgi?id=317933
+ * 3. Caused by 1.: Edge creates two nested `::first-letter` containers, one for each selector
+ *    This doubles the `font-size` exponential when using the `em` unit.
+ */
+/* 2 */
+@-moz-document url-prefix() {
+}
+/* 3 */
+@supports (-ms-ime-align: auto) {
+}
+/* Logo
+ ========================================================================== */
+/*
+ * 1. Required for `a`
+ */
+/* Hover + Focus */
+/* Disabled State
+ ========================================================================== */
+/* Drag State
+ ========================================================================== */
+/*
+ * 1. Needed if moving over elements with have their own cursor on hover, e.g. links or buttons
+ * 2. Fix dragging over iframes
+ */
+/* 2 */
+/* Dragover State
+ ========================================================================== */
+/*
+ * Create a box-shadow when dragging a file over the upload area
+ */
+/* Blend modes
+ ========================================================================== */
+/* Transform
+========================================================================== */
+/* Transform Origin
+========================================================================== */
+/* ========================================================================
+   Component: Flex
+ ========================================================================== */
+/*
+ * Remove pseudo elements created by micro clearfix as precaution
+ */
+/* Alignment
+ ========================================================================== */
+/*
+ * Align items along the main axis of the current line of the flex container
+ * Row: Horizontal
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/*
+ * Align items in the cross axis of the current line of the flex container
+ * Row: Vertical
+ */
+/* Direction
+ ========================================================================== */
+/* Wrap
+ ========================================================================== */
+/*
+ * Aligns items within the flex container when there is extra space in the cross-axis
+ * Only works if there is more than one line of flex items
+ */
+/* Item ordering
+ ========================================================================== */
+/*
+ * Default is 0
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/* Item dimensions
+ ========================================================================== */
+/*
+ * Initial: 0 1 auto
+ * Content dimensions, but shrinks
+ */
+/*
+ * No Flex: 0 0 auto
+ * Content dimensions
+ */
+/*
+ * Relative Flex: 1 1 auto
+ * Space is allocated considering content
+ */
+/*
+ * Absolute Flex: 1 1 0%
+ * Space is allocated solely based on flex
+ */
+/* ========================================================================
+   Component: Margin
+ ========================================================================== */
+/*
+ * Default
+ */
+/* Small
+ ========================================================================== */
+/* Medium
+ ========================================================================== */
+/* Large
+ ========================================================================== */
+/* Desktop and bigger */
+/* XLarge
+ ========================================================================== */
+/* Desktop and bigger */
+/* Remove
+ ========================================================================== */
+/* Auto
+ ========================================================================== */
+/* ========================================================================
+   Component: Padding
+ ========================================================================== */
+/* Desktop and bigger */
+/* Small
+ ========================================================================== */
+/* Large
+ ========================================================================== */
+/* Desktop and bigger */
+/* Remove
+ ========================================================================== */
+/* ========================================================================
+   Component: Position
+ ========================================================================== */
+/* Directions
+ ========================================================================== */
+/* Edges
+ ========================================================================== */
+/* Don't use `width: 100%` because it is wrong if the parent has padding. */
+/* Corners
+ ========================================================================== */
+/*
+ * Center
+ * 1. Fix text wrapping if content is larger than 50% of the container (Not working in Firefox)
+ * 2. Fix text wrapping for Firefox
+ */
+/* Vertical */
+/* Horizontal */
+/* Cover
+ ========================================================================== */
+/* Utility
+ ========================================================================== */
+/* Margin modifier
+ ========================================================================== */
+/*
+ * Small
+ */
+/*
+ * Medium
+ */
+/*
+ * Large
+ */
+/* Desktop and bigger */
+/* ========================================================================
+   Component: Transition
+ ========================================================================== */
+/*
+ * Using multiple selectors to exclude `uk-transition-toggle`
+ * Note: Transitions don't work with `uk-postion-center-*` classes because they also use `transform`
+ *       Just put the transition in an extra `div`
+ */
+/*
+ * Fade
+ */
+/* Show */
+/*
+ * Scale
+ * Note: Using `scale3d` for better image rendering
+ */
+/* Show */
+/*
+ * Slide
+ */
+/* Show */
+/* Opacity modifier
+========================================================================== */
+/* Duration modifiers
+========================================================================== */
+/* ========================================================================
+   Component: Visibility
+ ========================================================================== */
+/*
+ * Hidden
+ * `hidden` attribute also set here to make it stronger
+ */
+/* Phone landscape and bigger */
+/* Tablet landscape and bigger */
+/* Desktop and bigger */
+/* Large screen and bigger */
+/*
+ * Visible
+ */
+/* Phone portrait and smaller */
+/* Phone landscape and smaller */
+/* Tablet landscape and smaller */
+/* Desktop and smaller */
+/* Visibility
+ ========================================================================== */
+/* Hover
+ ========================================================================== */
+/*
+ * Hidden
+ * Can't use `display: hidden` because it's not focusable. This is accessible through keyboard.
+ */
+.uk-visible-toggle:not(:hover):not(.uk-hover) .uk-hidden-hover:not(:focus) {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  overflow: hidden !important;
+}
+/*
+ * Invisible
+ * Can't use `visibility: hidden` because it's not focusable. This is accessible through keyboard.
+ */
+.uk-visible-toggle:not(:hover):not(.uk-hover) .uk-invisible-hover:not(:focus) {
+  opacity: 0 !important;
+}
+/* Touch
+ ========================================================================== */
+/*
+ * Hide if primary pointing device has limited accuracy, e.g. a touch screen.
+ * Works on mobile browsers: Safari, Chrome and Android browser
+ */
+/*
+ * Hide if primary pointing device is accurate, e.g. mouse.
+ * 1. Fallback for IE11 and Firefox, because `pointer` is not supported
+ * 2. Reset if supported
+ */
+/* 1 */
+/* ========================================================================
+   Component: Inverse
+ ========================================================================== */
+/*
+ * Implemented class depends on the general theme color
+ * `uk-light` is for light colors on dark backgrounds
+ * `uk-dark` is or dark colors on light backgrounds
+ */
+.uk-light .uk-heading-line > ::before,
+.uk-light .uk-heading-line > ::after,
+.uk-section-primary:not(.uk-preserve-color) .uk-heading-line > ::before,
+.uk-section-primary:not(.uk-preserve-color) .uk-heading-line > ::after,
+.uk-section-secondary:not(.uk-preserve-color) .uk-heading-line > ::before,
+.uk-section-secondary:not(.uk-preserve-color) .uk-heading-line > ::after,
+.uk-tile-primary:not(.uk-preserve-color) .uk-heading-line > ::before,
+.uk-tile-primary:not(.uk-preserve-color) .uk-heading-line > ::after,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-heading-line > ::before,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-heading-line > ::after,
+.uk-card-primary.uk-card-body .uk-heading-line > ::before,
+.uk-card-primary.uk-card-body .uk-heading-line > ::after,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-heading-line > ::before,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-heading-line > ::after,
+.uk-card-secondary.uk-card-body .uk-heading-line > ::before,
+.uk-card-secondary.uk-card-body .uk-heading-line > ::after,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-heading-line > ::before,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-heading-line > ::after,
+.uk-overlay-primary .uk-heading-line > ::before,
+.uk-overlay-primary .uk-heading-line > ::after,
+.uk-offcanvas-bar .uk-heading-line > ::before,
+.uk-offcanvas-bar .uk-heading-line > ::after {
+  border-bottom-color: rgba(255, 255, 255, 0.2);
+}
+.uk-light .uk-breadcrumb > * > :hover,
+.uk-light .uk-breadcrumb > * > :focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > * > :hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-breadcrumb > * > :focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-breadcrumb > * > :hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-breadcrumb > * > :focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-breadcrumb > * > :hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-breadcrumb > * > :focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-breadcrumb > * > :hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-breadcrumb > * > :focus,
+.uk-card-primary.uk-card-body .uk-breadcrumb > * > :hover,
+.uk-card-primary.uk-card-body .uk-breadcrumb > * > :focus,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-breadcrumb > * > :hover,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-breadcrumb > * > :focus,
+.uk-card-secondary.uk-card-body .uk-breadcrumb > * > :hover,
+.uk-card-secondary.uk-card-body .uk-breadcrumb > * > :focus,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-breadcrumb > * > :hover,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-breadcrumb > * > :focus,
+.uk-overlay-primary .uk-breadcrumb > * > :hover,
+.uk-overlay-primary .uk-breadcrumb > * > :focus,
+.uk-offcanvas-bar .uk-breadcrumb > * > :hover,
+.uk-offcanvas-bar .uk-breadcrumb > * > :focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-light .uk-pagination > * > :hover,
+.uk-light .uk-pagination > * > :focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-pagination > * > :hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-pagination > * > :focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-pagination > * > :hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-pagination > * > :focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-pagination > * > :hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-pagination > * > :focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-pagination > * > :hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-pagination > * > :focus,
+.uk-card-primary.uk-card-body .uk-pagination > * > :hover,
+.uk-card-primary.uk-card-body .uk-pagination > * > :focus,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-pagination > * > :hover,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-pagination > * > :focus,
+.uk-card-secondary.uk-card-body .uk-pagination > * > :hover,
+.uk-card-secondary.uk-card-body .uk-pagination > * > :focus,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-pagination > * > :hover,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-pagination > * > :focus,
+.uk-overlay-primary .uk-pagination > * > :hover,
+.uk-overlay-primary .uk-pagination > * > :focus,
+.uk-offcanvas-bar .uk-pagination > * > :hover,
+.uk-offcanvas-bar .uk-pagination > * > :focus {
+  color: rgba(255, 255, 255, 0.7);
+}
+.uk-light .uk-dotnav > * > :hover,
+.uk-light .uk-dotnav > * > :focus,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > :hover,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > :focus,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav > * > :hover,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav > * > :focus,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav > * > :hover,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav > * > :focus,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav > * > :hover,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav > * > :focus,
+.uk-card-primary.uk-card-body .uk-dotnav > * > :hover,
+.uk-card-primary.uk-card-body .uk-dotnav > * > :focus,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-dotnav > * > :hover,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-dotnav > * > :focus,
+.uk-card-secondary.uk-card-body .uk-dotnav > * > :hover,
+.uk-card-secondary.uk-card-body .uk-dotnav > * > :focus,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-dotnav > * > :hover,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-dotnav > * > :focus,
+.uk-overlay-primary .uk-dotnav > * > :hover,
+.uk-overlay-primary .uk-dotnav > * > :focus,
+.uk-offcanvas-bar .uk-dotnav > * > :hover,
+.uk-offcanvas-bar .uk-dotnav > * > :focus {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-color: transparent;
+}
+.uk-light .uk-dotnav > * > :active,
+.uk-section-primary:not(.uk-preserve-color) .uk-dotnav > * > :active,
+.uk-section-secondary:not(.uk-preserve-color) .uk-dotnav > * > :active,
+.uk-tile-primary:not(.uk-preserve-color) .uk-dotnav > * > :active,
+.uk-tile-secondary:not(.uk-preserve-color) .uk-dotnav > * > :active,
+.uk-card-primary.uk-card-body .uk-dotnav > * > :active,
+.uk-card-primary > :not([class*='uk-card-media']) .uk-dotnav > * > :active,
+.uk-card-secondary.uk-card-body .uk-dotnav > * > :active,
+.uk-card-secondary > :not([class*='uk-card-media']) .uk-dotnav > * > :active,
+.uk-overlay-primary .uk-dotnav > * > :active,
+.uk-offcanvas-bar .uk-dotnav > * > :active {
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: transparent;
+}
+/* ========================================================================
+   Component: Print
+ ========================================================================== */
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+}

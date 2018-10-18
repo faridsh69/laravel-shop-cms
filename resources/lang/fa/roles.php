@@ -1,0 +1,23 @@
+﻿<?php
+return [
+	'agent' => 'نمایندگی',
+	'coworker' => 'همکار',
+	'marketer' => 'بازاریاب',
+	'general_manager' => 'مدیر کل',
+	'content_manager' => 'مدیر محتوا',
+	'product_manager' => 'مدیر محصولات',
+	'order_manager' => 'مدیر سفارشات',
+	'advertise_manager' => 'مدیر آگهی',
+	'forum_manager' => 'مدیر تعمیرات',
+	'user_manager' => 'مدیر کاربران',
+	'payment_manager' => 'مدیر پرداختها',
+	'category_manager' => 'مدیر دسته بندیها',
+	'comment_manager' => 'مدیر نظرات',
+	'factor_manager' => 'مدیر سفارشات',
+	'developer' => 'برنامه نویس',
+	'agent1' => 'نمایندگی ۱',
+	'agent2' => 'نمایندگی ۲',
+	'agent3' => 'نمایندگی ۳',
+	'agent4' => 'نمایندگی ۴',
+	'agent5' => 'نمایندگی ۵',
+];

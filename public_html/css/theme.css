@@ -1,0 +1,51 @@
+.btn{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius: .125rem;
+}
+.btn:hover{
+    box-shadow: 0 3px 10px 1px rgba(0,0,0,.16), 0 4px 15px 2px rgba(0,0,0,.12) !important;
+}
+.btn-beauty{
+    box-shadow: 0 7px 20px 0 rgba(14,107,150,.25);
+    transition: all .3s ease;
+    border-radius: 3px;
+}
+
+.btn-default{
+    box-shadow: 0 0px 0px 0 rgba(14,107,150,0);
+}
+.panel{
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+    border-radius: .25rem;
+    border: none !important;
+}
+.panel-heading{
+    border: none;
+}
+.panel-default .panel-heading{
+    background: linear-gradient(40deg,#45cafc,#303f9f) !important;
+    color: white !important;
+}
+.panel-info .panel-heading{
+    background: linear-gradient(40deg,#45cafc,#303f9f) !important;
+    color: white !important;
+}
+
+.background-gradiant-1{
+    margin: 0px -20px;
+    color:white;
+    background: linear-gradient(113deg, #50d258, #0dd0af);
+}
+.background-gradiant-2{
+    margin: 0px -20px;
+    color:white;
+    background: linear-gradient(45deg, rgba(255,95,83,1) 0%,rgba(168,73,163,1) 100%);
+}
+.background-gradiant-3{
+    margin: 0px -20px;
+    color:white;
+    background: linear-gradient(45deg, rgba(255,95,83,1) 100%,rgba(168,73,163,1) 0%);
+}
+.background-gradiant-4{
+    background-image: linear-gradient(65deg,#3ecf8e,#606cec);
+}
